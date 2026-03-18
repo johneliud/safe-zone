@@ -8,6 +8,10 @@ The platform consists of several independent microservices. The core services ar
 
 *   **Platform Orchestration**: [Safe Zone](https://github.com/johneliud/safe-zone) (This Repository)
 *   **User Service**: [User Service Microservice](https://github.com/johneliud/user-service)
+*   **Product Service**: [Product Service Microservice](https://github.com/johneliud/product-service)
+*   **Media Service**: [Media Service Microservice](https://github.com/johneliud/media-service)
+*   **API Gateway**: [API Gateway](https://github.com/johneliud/api-gateway)
+*   **Frontend**: [Frontend Microservice](https://github.com/johneliud/frontend)
 
 ## Getting Started
 
