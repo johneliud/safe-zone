@@ -23,18 +23,22 @@ docker run -d --name sonarqube -p 9000:9000 sonarqube:latest
 
 ## Project Details
 
-| Parameter | Value |
-|-----------|-------|
-| Project Name | ecommerce-microservices |
-| Project Key | ecommerce-microservices |
-| Build Tool | Maven |
+| Service | Repository | Project Key |
+|-----------|-------|-------------|
+| User Service | [user-service](https://github.com/johneliud/user-service) | `user-service` |
+| Product Service | [product-service](https://github.com/johneliud/product-service) | `product-service` |
+| Media Service | [media-service](https://github.com/johneliud/media-service) | `media-service` |
+| API Gateway | [api-gateway](https://github.com/johneliud/api-gateway) | `api-gateway` |
+| Frontend | [frontend](https://github.com/johneliud/frontend) | `frontend` |
 
-## Remote Integration (Ngrok)
+## GitHub Integration (Task 3)
 
-To allow GitHub Actions to reach your local SonarQube instance:
-1. Start Ngrok: `ngrok http 9000`
-2. Update `SONAR_HOST_URL` in GitHub Secrets with the provided HTTPS URL.
-3. Ensure `SONAR_TOKEN` is also added to GitHub Secrets.
+The following configurations are applied to each repository:
+1. **Secrets**:
+   - `SONAR_TOKEN`: Authentication token from SonarQube.
+   - `SONAR_HOST_URL`: The Ngrok public URL.
+2. **Workflow**: `.github/workflows/build.yml` triggers on every push and PR.
+3. **Quality Gates**: Maven builds include `-Dsonar.qualitygate.wait=true` to enforce status checks.
 
 ## Notes
 
