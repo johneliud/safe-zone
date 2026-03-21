@@ -28,6 +28,7 @@ docker run -d --name sonarqube -p 9000:9000 sonarqube:latest
 | User Service | [user-service](https://github.com/johneliud/user-service) | `user-service` |
 | Product Service | [product-service](https://github.com/johneliud/product-service) | `product-service` |
 | Media Service | [media-service](https://github.com/johneliud/media-service) | `media-service` |
+| Order Service | [order-service](https://github.com/johneliud/order-service) | `order-service` |
 | API Gateway | [api-gateway](https://github.com/johneliud/api-gateway) | `api-gateway` |
 | Frontend | [frontend](https://github.com/johneliud/frontend) | `frontend` |
 
